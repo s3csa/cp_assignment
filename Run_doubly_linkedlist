@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include"doublylinkedlist.h"
+void main()
+{
+ 
+   node*head=create_head();
+   insert_first(head,400);
+   insert_first(head,300);
+   insert_first(head,200);
+   insert_first(head,100);
+   insert_last(head,500);
+   insert_last(head,600);
+   insert_last(head,700);
+   insert_last(head,800);
+   display(head);
+   delete_last(head);
+   display(head);
+   delete_first(head);
+   display(head);
+   delete_last(head);
+   display(head);
+   delete_first(head);
+   display(head);
+   insert_after(head,100,500);
+   display(head);
+   insert_after(head,2000,400);
+   display(head);
+   insert_before(head,1000,400);
+   display(head);
+   insert_before(head,3000,500);
+   display(head);
+}
